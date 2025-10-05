@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*
+todos os ID em HTML é= # no Css
+e todos os Class é = a . no Css
+*/
+body{
+    background-color: #414EEA;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color:#414EEA ;
+    background-color:#A242EB ;
+   
+    text-align: center;
+}
+h2{
+    color: #42BAEB;
+    
+    text-align: center;
+    font-size: larger;
+}
+.inicial{
+    color: #42eb75;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.Intermediario{
+    color: #42ebb8;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.avançado{
+    color: #42c9eb;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.destaque{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p {
+    color: wheat;
+    font-size: larger;
+    text-align:justify;
+}

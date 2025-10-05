@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens e audio</title>
+    <link rel="shortcut icon" href="icons8-question-mark-32.png" type="image/x-icon">
+    <Style>
+        mark{
+             background-color: chartreuse;
+            }
+    </Style>
+</head>
+<body>
+    <h1>Imagem Dinamicas</h1>
+    <p>Vamos tentar abrir em outros dispositivos posteriormente  </p>
+    <picture>
+         <source media="(max-width:750px )"srcset="imagens/imagem-p.png" type="image/png">
+         <source media="(max-width:1050px )" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem Flexivel">
+    </picture>
+    <h1>Ordem</h1>
+    <p>A ordem de tamanho tem que ser respeitada para que op codigo funcione normalmente e a nomenclatura dos arquivos também são de extrema importancia </p>
+    <p> Teste no Gimp é fazer o crop, corta a imagem conforme a tela do usuario</p>
+
+    <h1>Audio</h1>
+    <p>Iremos reproduzir um audio </p>
+   <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Til Death Parts Us - Aakash Gandhi.mp3" type="audio/mpeg" >
+        <source src="midia/Til Death Parts Us - Aakash Gandhi.WAV" type="audio/wav">
+        <source src="midia/Til Death Parts Us - Aakash Gandhi.OGG" type="audio/ogg">
+   </audio>
+    <!--Temos o sistema de MP3, WAV e OGG, o metadata serve para carregar só o basico, auto só vai entender que o site carregou por completo quando o audio também for totalmente carregado e o none vai carregar nada, só quando o usuario clicar-->
+
+    <p>Existem alguns parametros, tais como o autoplay controls, loop e o preload, evite o WAV, pois são arquivos pesados e em um site, em uma navegador nossos clientes necessitam de paginas fluidas, sem delay ou demora, o melhor a se fazer é usar MP3 e imagens mais compactadas com pouca memoria </p>
+    <p>Pelo menos comigo o audio só rodou colocando o controls e o autoplay </p>
+    <h1>Videos e formatos</h1>
+    <p>Iremos colocar videos em nosso site</p>
+    <!--Uma dica é o site da Pexels-->
+    <p>Para video temos algumas especificações, tais como</p>
+   <ol>
+    <li>Microsoft Edge-<mark >.mp4 .m4v</mark></li>
+    <li>Apple Safare-<mark>.mp4 .m4v</mark></li>
+    <li>Google Chome-<mark>.mp4 .m4v .webm .ogv</mark></li>
+    <li>Mozilla Firefox-<mark>.webm .ogv</mark></li>
+    <li>Opera-<mark>.webm .ogv</mark></li>
+   </ol>
+<video controls width="1080" loop >
+    <source src="midia/Exemplo-Full.webm" type="video/webm">
+    <source src="midia/Exemplo-Full.mkv" type="video/mkv">
+    <source src="midia/exemplo-full.mp4" type="video/mp4">
+</video>
+ <h1>Colocando Videos do youtube</h1>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/mpp18MorKOA?si=whwyqtfruw837twE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <!--A melhor forma de colocar videos em nosso site é colocando os videos do youtube, porem não pode ser videos privados-->
+</body>
+</html> 
