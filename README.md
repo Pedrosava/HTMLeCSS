@@ -1,2 +1,4 @@
 # HTMLeCSS
 Exercicios de HTML5 e CSS3 do curso em video
+
+aprendendo a organizar e gerenciar os repositorios 
